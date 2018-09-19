@@ -5,6 +5,7 @@ import helpers.helpers as helpers
 
 
 def is_anagram(a, b):
+    """checks if two strings are anagram"""
     if len(a) == len(b):
         for i in a:
             if i not in b:
@@ -15,6 +16,7 @@ def is_anagram(a, b):
 
 
 def has_anagram(lst):
+    """checks if list of strings has any anagram in them"""
     i = 0
     while i < len(lst):
         j = i + 1
@@ -30,6 +32,8 @@ def has_anagram(lst):
     return None
 
 
+# program starts here
+#
 data = helpers.read_as_list('day04.txt')
 
 valid = 0
