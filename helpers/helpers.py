@@ -24,6 +24,7 @@ def read_as_list(file):
 
     f = open(file, 'r')
     lines = f.readlines()
+    lines = [line.strip('\n') for line in lines]
     f.close()
 
     return lines
