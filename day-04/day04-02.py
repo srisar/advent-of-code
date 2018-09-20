@@ -1,5 +1,5 @@
 #! python
-# Advent of Code - Day 02
+# Advent of Code - Day 04
 #
 # For added security, yet another system policy has been put in place. Now, a valid passphrase must
 # contain no two words that are anagrams of each other - that is, a passphrase is invalid
