@@ -19,9 +19,18 @@ import helpers.helpers as helpers
 def is_anagram(a, b):
     """checks if two strings are anagram"""
     if len(a) == len(b):
-        for i in a:
-            if i not in b:
+        # check if all the letters in a
+        # is in b
+        for letter in a:
+            if letter not in b:
                 return False
+
+        # check if all the letters in b
+        # is in a
+        for letter in b:
+            if letter not in a:
+                return False
+        # if everything matches, then return true
         return True
     else:
         return False
