@@ -28,3 +28,12 @@ def read_as_list(file):
     f.close()
 
     return lines
+
+
+def read_as_list_numbers(file):
+    f = open(file, 'r')
+    lines = f.readlines()
+    lines = [int(line.strip('\n')) for line in lines]
+    f.close()
+
+    return lines
